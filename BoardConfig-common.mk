@@ -169,6 +169,9 @@ TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
 # Ramdisk
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/fstab.qcom
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS := $(LOCAL_PATH)/sepolicy/vendor/xiaomi
