@@ -19,6 +19,9 @@ TARGET_SCREEN_WIDTH := 1080
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+#kernel
+TARGET_KERNEL_CONFIG := vendor/bouquet_defconfig vendor/whyred.config
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01
 

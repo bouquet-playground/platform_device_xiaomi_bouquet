@@ -37,6 +37,9 @@ TARGET_OTA_ASSERT_DEVICE := tulip
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
+#kernel
+TARGET_KERNEL_CONFIG := vendor/bouquet_defconfig vendor/tulip.config
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 

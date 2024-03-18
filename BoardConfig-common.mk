@@ -78,7 +78,6 @@ DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(LOCAL_PATH)/compatibility_matrix.xml
 
 # Kernel
-include device/xiaomi/bouquet-kernel/BoardConfigKernel.mk
 BOARD_KERNEL_CMDLINE := \
     androidboot.hardware=qcom \
     user_debug=31 \
@@ -98,6 +97,7 @@ BOARD_KERNEL_CMDLINE += androidboot.verifiedbootstate=green
 
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
+TARGET_KERNEL_SOURCE := kernel/msm-4.19
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_VERSION := 4.19
 
