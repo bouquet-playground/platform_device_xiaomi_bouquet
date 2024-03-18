@@ -1,0 +1,6 @@
+recovery_only(`
+  allow fastbootd system_block_device:blk_file r_file_perms;
+  allow fastbootd system_block_device:blk_file { ioctl };
+  allow fastbootd boot_block_device:blk_file { ioctl };
+  allow recovery system_block_device:blk_file { ioctl };
+')

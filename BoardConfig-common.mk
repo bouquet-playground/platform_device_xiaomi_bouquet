@@ -170,7 +170,9 @@ TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/fstab.qcom
 
 # SELinux
-include device/xiaomi/bouquet-sepolicy/SEPolicy.mk
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS := $(LOCAL_PATH)/sepolicy/vendor/xiaomi
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS := $(LOCAL_PATH)/sepolicy/system_ext/private
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true

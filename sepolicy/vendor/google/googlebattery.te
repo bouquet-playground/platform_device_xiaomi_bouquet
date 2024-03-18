@@ -1,0 +1,19 @@
+type hal_googlebattery, domain;
+type hal_googlebattery_service, hal_service_type, service_manager_type;
+
+# To allow Settings to find and bind Google Battery HAL
+allow system_app hal_googlebattery_service:service_manager find;
+binder_call(system_app, hal_googlebattery)
+
+# To find and bind Google Battery HAL
+allow turbo_adapter hal_googlebattery_service:service_manager find;
+binder_call(turbo_adapter, hal_googlebattery)
+
+# allow SystemUI to find and bind Google Battery HAL
+allow platform_app hal_googlebattery_service:service_manager find;
+binder_call(platform_app, hal_googlebattery)
+
+# To find and bind Google Battery HAL
+allow dumpstate hal_googlebattery_service:service_manager find;
+binder_call(dumpstate, hal_googlebattery)
+
