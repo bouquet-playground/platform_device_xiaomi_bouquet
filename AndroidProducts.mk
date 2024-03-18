@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/whyred.mk \
-    $(LOCAL_DIR)/tulip.mk
+    $(LOCAL_DIR)/lineage_whyred.mk \
+    $(LOCAL_DIR)/lineage_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-    whyred-user \
-    whyred-userdebug \
-    whyred-eng \
-    tulip-user \
-    tulip-userdebug \
-    tulip-eng
+    lineage_whyred-user \
+    lineage_whyred-userdebug \
+    lineage_whyred-eng \
+    lineage_tulip-user \
+    lineage_tulip-userdebug \
+    lineage_tulip-eng

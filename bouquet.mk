@@ -6,7 +6,6 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 #
 # All components inherited here go to system image
@@ -20,10 +19,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/mainline_system.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
-#
-# All components inherited here go to product image
-#
-$(call inherit-product, vendor/hentai/build/product/hentai_product.mk)
 
 #
 # All components inherited here go to vendor image

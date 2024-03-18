@@ -17,9 +17,13 @@
 # Inherit AOSP product configuration
 $(call inherit-product, $(LOCAL_PATH)/bouquet.mk)
 
-# Inherit from whyred device
-$(call inherit-product, $(LOCAL_PATH)/device-whyred.mk)
+# Inherit from tulip device
+$(call inherit-product, $(LOCAL_PATH)/device-tulip.mk)
 
-PRODUCT_DEVICE := whyred
-PRODUCT_MODEL := Redmi Note 5
-PRODUCT_NAME := whyred
+# Inherit some common Lineage stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+PRODUCT_DEVICE := tulip
+PRODUCT_MODEL := Redmi Note 6 Pro
+PRODUCT_NAME := lineage_tulip
+PRODUCT_SHIPPING_API_LEVEL := 27
