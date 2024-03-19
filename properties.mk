@@ -156,6 +156,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.launcher.blur.appLaunch=0
 
+# Fastbootd
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.fastbootd.available=true
+
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpmhalservice.enable=1
