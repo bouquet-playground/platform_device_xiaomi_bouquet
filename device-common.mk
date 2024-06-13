@@ -175,6 +175,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.6:64 \
     libdng_sdk.vendor \
+    libpng.vendor:32 \
     vendor.qti.hardware.camera.device@1.0:64
 
 # Configstore
@@ -308,7 +309,8 @@ PRODUCT_COPY_FILES += \
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
-    IPACM_cfg.xml
+    IPACM_cfg.xml \
+    libion.vendor
 
 # IRQ
 PRODUCT_COPY_FILES += \
@@ -415,7 +417,10 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libjson \
     libprotobuf-cpp-full \
-    librmnetctl
+    libnetutils.vendor \
+    librmnetctl \
+    libsqlite.vendor:64
+
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -424,9 +429,10 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service \
-    android.frameworks.sensorservice@1.0.vendor
+    libpower.vendor
 
 # Shims
 PRODUCT_PACKAGES += \
