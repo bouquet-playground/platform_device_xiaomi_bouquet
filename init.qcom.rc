@@ -489,13 +489,6 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     onrestart restart audioserver
 
-service vendor.charger /system/bin/chargeonlymode
-    class charger
-    user system
-    group system graphics input
-    capabilities SYS_BOOT
-    seclabel u:r:charger:s0
-
 on property:init.svc.vendor.charger=running
     stop vendor.qseecomd
     stop vendor.keymaster-3-0
