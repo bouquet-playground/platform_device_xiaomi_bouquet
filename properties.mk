@@ -151,9 +151,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.idle_time=32767 \
     vendor.gralloc.enable_fb_ubwc=1
 
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.launcher.blur.appLaunch=0
-
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpmhalservice.enable=1
