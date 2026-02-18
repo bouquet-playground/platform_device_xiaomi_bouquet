@@ -40,6 +40,9 @@ TARGET_SCREEN_WIDTH := 1080
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# Kernel
+TARGET_KERNEL_CONFIG += vendor/tulip-perf_defconfig
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01
 
