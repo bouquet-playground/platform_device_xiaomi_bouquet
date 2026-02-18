@@ -22,4 +22,4 @@ $(call inherit-product, $(LOCAL_PATH)/device-whyred.mk)
 
 PRODUCT_DEVICE := whyred
 PRODUCT_MODEL := Redmi Note 5
-PRODUCT_NAME := whyred
+PRODUCT_NAME := arrow_whyred

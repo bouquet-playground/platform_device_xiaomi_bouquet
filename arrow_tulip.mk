@@ -22,4 +22,4 @@ $(call inherit-product, $(LOCAL_PATH)/device-tulip.mk)
 
 PRODUCT_DEVICE := tulip
 PRODUCT_MODEL := Redmi Note 6 Pro
-PRODUCT_NAME := tulip
+PRODUCT_NAME := arrow_tulip
